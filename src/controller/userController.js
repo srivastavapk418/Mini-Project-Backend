@@ -5,7 +5,7 @@ const random = require("randomstring");
 const jwt = require("jsonwebtoken");
 const client = require("twilio")(
   "AC7b525fd3f754fabafd82797bcba6c228",
-  "60ba221a1bdbce4a2e1d6b34e12a0646"
+  "7f870acbbe307fbc9672fe6d5f0866d0"
 );
 const createAccessToken = async (id, mobileNumber) => {
   const accessToken = jwt.sign(
