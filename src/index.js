@@ -2,6 +2,8 @@ const express = require("express");
 const mongoose = require("mongoose");
 const route = require("./route/route");
 const app = express();
+var cors = require("cors");
+app.use(cors());
 app.use(express.json());
 mongoose
   .connect(
